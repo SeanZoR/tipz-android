@@ -3,6 +3,8 @@ Tipz.io - Learn Android Best Practices By Example
 
 This project is a sample project that demonstrates how to build an Android app.
 
+<img src='https://ship.io/jobs/IJT1NZ6UznctAKpj/build_status.png'/>
+
 #http://tipz.github.io/tipz-android/
 
 ##Subjects that will be covered##
