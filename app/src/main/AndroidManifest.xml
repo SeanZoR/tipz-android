@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tipz.app" >
 
-    <application>
+    <application
+        android:name=".TipzApplication">
         <activity
             android:name=".view.LauncherActivity"
             android:label="@string/activity_launcher_title" >
