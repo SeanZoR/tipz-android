@@ -47,22 +47,6 @@ public abstract class BaseActivity<T extends Application> extends ActionBarActiv
         mIsResumed = false;
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        if (getMenuActions() != 0) {
-            getMenuInflater().inflate(getMenuActions(), menu);
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    /***
-     * This method helps setting the menu actions of the Activity
-     * @return The resource Id of the menu you wish to inflate
-     */
-    protected abstract int getMenuActions();
-
     /***
      * This method helps setting the layout of the activity
      * @return The resource Id of the layout you wish to inflate (i.e. R.layout.activity_layout)
