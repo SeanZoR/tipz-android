@@ -3,7 +3,9 @@
     package="com.tipz.app" >
 
     <application
-        android:name=".TipzApplication">
+        android:name=".TipzApplication"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Tipz">
         <activity
             android:name=".view.LauncherActivity"
             android:label="@string/activity_launcher_title" >
