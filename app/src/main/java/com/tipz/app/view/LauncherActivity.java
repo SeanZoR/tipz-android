@@ -14,8 +14,8 @@ public class LauncherActivity extends Activity {
     protected TipzApplication mApp;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         mApp = (TipzApplication) getApplicationContext();
 
