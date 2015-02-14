@@ -10,3 +10,7 @@ android {
         targetSdkVersion 21
     }
 }
+
+dependencies {
+    compile "com.android.support:appcompat-v7:21.0.3"
+}
