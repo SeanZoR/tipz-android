@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="pref_last_version_code">com.tipz.app.pref_last_version_code</string>
+    <string name="pref_app_launch_times">com.tipz.app.pref_app_launch_times</string>
 </resources>

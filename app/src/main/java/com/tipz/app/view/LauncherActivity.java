@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 
+import com.tipz.app.R;
 import com.tipz.app.TipzApplication;
 
 public class LauncherActivity extends Activity {
@@ -17,7 +18,9 @@ public class LauncherActivity extends Activity {
         super.onCreate(savedInstanceState, persistentState);
 
         mApp = (TipzApplication) getApplicationContext();
+
+        // Update the number of application launches
+        mApp.getPrefs().applyInt(R.string.pref_app_launch_times,
+                mApp.getPrefs().getInt(R.string.pref_app_launch_times, 0) + 1);
     }
-
-
 }
