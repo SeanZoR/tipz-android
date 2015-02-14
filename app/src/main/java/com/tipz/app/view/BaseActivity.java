@@ -2,9 +2,10 @@ package com.tipz.app.view;
 
 import android.app.Application;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
+import android.support.v7.widget.Toolbar;
+
+import com.tipz.app.R;
 
 public abstract class BaseActivity<T extends Application> extends ActionBarActivity {
 
@@ -12,12 +13,12 @@ public abstract class BaseActivity<T extends Application> extends ActionBarActiv
 
     protected T mApp;
 
-    protected ActionBar mActionBar;
+    protected Toolbar mToolbar;
 
     protected boolean mIsResumed = false;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Just inflate the activity layout
@@ -30,7 +31,8 @@ public abstract class BaseActivity<T extends Application> extends ActionBarActiv
         mApp = (T) getApplication();
 
         // Action bar setup
-        mActionBar = getSupportActionBar();
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
     }
 
     @Override
