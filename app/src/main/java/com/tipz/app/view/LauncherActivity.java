@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.os.StrictMode;
 import android.util.Log;
 
+import com.tipz.app.BuildConfig;
 import com.tipz.app.R;
 import com.tipz.app.TipzApplication;
 
@@ -17,6 +19,20 @@ public class LauncherActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        if (BuildConfig.DEBUG) {
+            StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
+                    .detectDiskReads()
+                    .detectDiskWrites()
+                    .detectNetwork()   // or .detectAll() for all detectable problems
+                    .penaltyLog()
+                    .build());
+            StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
+                    .detectLeakedSqlLiteObjects()
+                    .detectLeakedClosableObjects()
+                    .penaltyLog()
+                    .build());
+        }
+
         super.onCreate(savedInstanceState);
 
         mApp = (TipzApplication) getApplicationContext();
