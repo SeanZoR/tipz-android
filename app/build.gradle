@@ -9,6 +9,30 @@ android {
         minSdkVersion 15
         targetSdkVersion 21
     }
+
+    signingConfigs {
+        release {
+            // Load the properties file
+            Properties keysProps = new Properties()
+            keysProps.load(new FileInputStream(file('../keys/tipz-production.properties')))
+
+            // Set the store signing config values
+            storeFile file('../keys/tipz-production.keystore')
+            storePassword keysProps["KEY_RELEASE_STORE_PASS"]
+            keyAlias 'android'
+            keyPassword keysProps["KEY_RELEASE_ALIAS_PASS"]
+        }
+
+        debug {
+            storeFile file('../keys/tipz-debug.keystore')
+        }
+    }
+    buildTypes {
+        release {
+
+            signingConfig signingConfigs.release
+        }
+    }
 }
 
 dependencies {
