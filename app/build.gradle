@@ -27,10 +27,17 @@ android {
             storeFile file('../keys/tipz-debug.keystore')
         }
     }
+
     buildTypes {
         release {
 
             signingConfig signingConfigs.release
+
+            // Proguard section
+            minifyEnabled true
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+
         debug {
             signingConfig signingConfigs.debug
             applicationIdSuffix ".debug"
