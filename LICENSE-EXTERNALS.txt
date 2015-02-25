@@ -1,0 +1,10 @@
+//
+//  3rd party licenses
+//  Tipz - Android
+//
+
+==================================================
+  THIRD-PARTIES COMPONENTS
+==================================================
+- Square Retrofit [http://square.github.io/retrofit/]
+  Apache License, 2.0 [http://square.github.io/retrofit/#license]

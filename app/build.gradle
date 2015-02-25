@@ -37,6 +37,7 @@ android {
             minifyEnabled true
             proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
             proguardFile file('proguard/proguard-general.txt')
+            proguardFile file('proguard/proguard-retrofit.txt')
         }
 
         debug {
@@ -48,4 +49,5 @@ android {
 
 dependencies {
     compile "com.android.support:appcompat-v7:21.0.3"
+    compile "com.squareup.retrofit:retrofit:1.9.0"
 }

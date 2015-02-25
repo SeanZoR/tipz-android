@@ -1,0 +1,17 @@
+# Inspired from:
+# - https://github.com/square/retrofit/issues/117#issuecomment-69749558
+# - http://stackoverflow.com/a/24178851/1446466
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+-dontwarn com.squareup.okhttp.**
+
+-dontwarn rx.**
+-dontwarn retrofit.**
+-keep class retrofit.** { *; }
+-keepclasseswithmembers class * {
+    @retrofit.http.* <methods>;
+}
+
+-keep class sun.misc.Unsafe { *; }
