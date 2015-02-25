@@ -36,6 +36,7 @@ android {
             // Proguard section
             minifyEnabled true
             proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+            proguardFile file('proguard/proguard-general.txt')
         }
 
         debug {

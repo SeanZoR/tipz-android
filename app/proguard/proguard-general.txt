@@ -1,0 +1,3 @@
+# Keeping the model classes. With the use of JSON parsers we sometime
+# depend on their original name
+-keep class com.tipz.app.model.** { *; }
