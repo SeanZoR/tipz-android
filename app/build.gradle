@@ -45,6 +45,15 @@ android {
             applicationIdSuffix ".debug"
         }
     }
+
+
+    sourceSets {
+        main {
+            java {
+                srcDir '../externals/wakeful/wakeful/src/'
+            }
+        }
+    }
 }
 
 dependencies {

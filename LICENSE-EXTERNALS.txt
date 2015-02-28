@@ -8,3 +8,6 @@
 ==================================================
 - Square Retrofit [http://square.github.io/retrofit/]
   Apache License, 2.0 [http://square.github.io/retrofit/#license]
+
+- WakefulIntentService [https://github.com/commonsguy/cwac-wakeful/]
+  Apache License, 2.0 [https://github.com/commonsguy/cwac-wakeful/blob/master/LICENSE]
