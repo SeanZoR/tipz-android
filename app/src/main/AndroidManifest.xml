@@ -21,6 +21,10 @@
         <activity
             android:name=".view.MainActivity"
             android:label="@string/title_activity_main"/>
+        <service
+            android:name=".control.services.TipzService"
+            android:exported="false" >
+        </service>
     </application>
 
 </manifest>

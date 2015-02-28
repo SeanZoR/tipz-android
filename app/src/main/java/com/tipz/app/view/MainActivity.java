@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 
+import com.commonsware.cwac.wakeful.WakefulIntentService;
 import com.tipz.app.R;
 import com.tipz.app.TipzApplication;
+import com.tipz.app.control.services.TipzService;
 
 public class MainActivity extends BaseActivity<TipzApplication>
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -33,6 +35,8 @@ public class MainActivity extends BaseActivity<TipzApplication>
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout),
                 mToolbar);
+
+        WakefulIntentService.sendWakefulWork(this, TipzService.actionGetTipsIntent(this));
     }
 
     @Override
