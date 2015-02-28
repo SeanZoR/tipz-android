@@ -6,6 +6,20 @@ import android.content.Context;
 import android.util.Log;
 
 import com.commonsware.cwac.wakeful.WakefulIntentService;
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.internal.bind.DateTypeAdapter;
+import com.tipz.app.R;
+import com.tipz.app.model.entities.TipEntity;
+import com.tipz.app.model.rest.TipzApi;
+
+import java.util.Date;
+import java.util.List;
+
+import retrofit.RestAdapter;
+import retrofit.RetrofitError;
+import retrofit.converter.GsonConverter;
 
 /**
  * An {@link IntentService} subclass for handling asynchronous task requests in
@@ -15,6 +29,7 @@ public class TipzService extends WakefulIntentService {
 
     private static final String ACTION_GET_TIPS = "com.tipz.app.control.services.action.ACTION_GET_TIPS";
     private static final String TAG = "TipzService";
+    private TipzApi mTipzApi;
 
     /**
      * Get an intent to start this service to perform action Get Tips with the given parameters. If
@@ -32,6 +47,33 @@ public class TipzService extends WakefulIntentService {
         super("TipzService");
     }
 
+    /***
+     * Note: This method runs on the UI Thread
+     */
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        // The following code creates a new Gson instance that will convert all fields from lower
+        // case with underscores to camel case and vice versa. It also registers a type adapter for
+        // the Date class. This DateTypeAdapter will be used anytime Gson encounters a Date field.
+        // The gson instance is passed as a parameter to GsonConverter, which is a wrapper
+        // class for converting types.
+        // (Source: http://square.github.io/retrofit/)
+        Gson gson = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+                .registerTypeAdapter(Date.class, new DateTypeAdapter())
+                .create();
+
+        // Creating the rest adapter (Retrofit)
+        RestAdapter restAdapter = new RestAdapter.Builder()
+                .setEndpoint(getString(R.string.tipz_api_base_url))
+                .setConverter(new GsonConverter(gson))
+                .build();
+
+        mTipzApi = restAdapter.create(TipzApi.class);
+    }
+
     @Override
     protected void doWakefulWork(Intent intent) {
         if (intent != null) {
@@ -47,9 +89,6 @@ public class TipzService extends WakefulIntentService {
      * Handle get tips in the provided background thread
      */
     private void handleGetTips() {
-        // TODO: implement
-        Log.d(TAG, "in handleGetTips");
-
-        // https://raw.githubusercontent.com/tipz/tipz-android/gh-pages/android-tips.json
+        List<TipEntity> tipEntities = mTipzApi.listTips();
     }
 }
