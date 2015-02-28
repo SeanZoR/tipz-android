@@ -1,8 +1,9 @@
 package com.tipz.app.control.services;
 
 import android.app.IntentService;
-import android.content.Intent;
+import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
 import com.commonsware.cwac.wakeful.WakefulIntentService;
@@ -14,11 +15,11 @@ import com.tipz.app.R;
 import com.tipz.app.model.entities.TipEntity;
 import com.tipz.app.model.rest.TipzApi;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import retrofit.RestAdapter;
-import retrofit.RetrofitError;
 import retrofit.converter.GsonConverter;
 
 /**
@@ -90,5 +91,23 @@ public class TipzService extends WakefulIntentService {
      */
     private void handleGetTips() {
         List<TipEntity> tipEntities = mTipzApi.listTips();
+
+        ContentValues[] allContent = new ContentValues[tipEntities.size()];
+
+        // Create content values for each entity
+        int contentIndex = 0;
+        for (TipEntity tip : tipEntities) {
+            ContentValues content = new ContentValues();
+            content.put(TipEntity.DB.CREATED_TIMESTAMP, tip.createdTimestamp);
+            content.put(TipEntity.DB.TITLE, tip.title);
+
+            // Add the content to the all of contents
+            allContent[contentIndex] = content;
+            contentIndex++;
+        }
+
+        // Store the entities in a database
+        int inserted = getContentResolver().bulkInsert(TipEntity.CONTENT_URI, allContent);
+        Log.d(TAG, String.format("Inserted %d tips", inserted));
     }
 }

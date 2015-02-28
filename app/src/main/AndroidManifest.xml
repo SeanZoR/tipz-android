@@ -26,6 +26,15 @@
             android:name=".control.services.TipzService"
             android:exported="false" >
         </service>
+
+        <provider
+            android:name="com.tipz.app.control.content_provider.TipzContentProvider"
+            android:exported="false"
+            android:authorities="${applicationId}.Tipz">
+            <meta-data
+                android:name="authority"
+                android:value="${applicationId}.Tipz" />
+        </provider>
     </application>
 
 </manifest>
