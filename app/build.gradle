@@ -8,6 +8,20 @@ android {
         applicationId "com.tipz.app"
         minSdkVersion 15
         targetSdkVersion 21
+
+        // AUTO VERSION INCREMENT SECTION
+        def longVersionName = "git -C ${rootDir} describe --tags --long".execute().text.trim()
+        def (fullVersionTag, versionBuild, gitSha) = longVersionName.tokenize('-')
+        def (versionMajor, versionMinor, versionPatch) = fullVersionTag.tokenize('.')
+        versionName "$versionMajor.$versionMinor.$versionPatch"
+        versionCode versionMajor.toInteger() * 100000 +
+                versionMinor.toInteger() * 10000 +
+                versionPatch.toInteger() * 1000 +
+                versionBuild.toInteger()
+        printf("\n--------" + "VERSION DATA--------" + "\n" +
+                "- CODE: " + versionCode + "\n" +
+                "- NAME: " + versionName +
+                "\n----------------------------\n")
     }
 
     signingConfigs {
