@@ -1,0 +1,107 @@
+[{
+  "tags": [
+    "gradle"
+  ],
+  "title": "So what is that 'gradle' in my Android Studio?",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/e421bed4266d92ab378e51f4ff5aaadc1927bf86#commitcomment-9717409"}
+},
+
+{
+  "tags": [
+    "gradle"
+  ],
+  "title": "Always use a gradle wrapper",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/e421bed4266d92ab378e51f4ff5aaadc1927bf86#commitcomment-9717309"}
+},
+
+{
+  "tags": [
+    "gradle"
+  ],
+  "title": "A gradle wrapper version is set in gradle-wrapper.properties",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/e421bed4266d92ab378e51f4ff5aaadc1927bf86"}
+},
+
+{
+  "tags": [
+    "gradle"
+  ],
+  "title": "What is the build.gradle file?",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/13a12ad01453b3fa05ba1023677b776075f35359#commitcomment-9717792"}
+},
+
+{
+  "tags": [
+    ""
+  ],
+  "title": "Leverage a top-level build.gradle file",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/13a12ad01453b3fa05ba1023677b776075f35359#commitcomment-9717888"}
+},
+
+{
+  "tags": [
+    "gradle"
+  ],
+  "title": "Set names to your modules/sub-projects",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/22ea32d6453e05bdf86a7fd144066fd2f5960a97#commitcomment-9718107"}
+},
+
+{
+  "tags": [
+    "git"
+  ],
+  "title": "Your git should hold all the files needed to compile the project from scratch",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/bb6a2499ed687e07d2902fe17fd3f9f0ba5e8d9b#commitcomment-9717180"}
+},
+
+{
+  "tags": [
+    "git"
+  ],
+  "title": "Always start with a gitignore file first",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/bb6a2499ed687e07d2902fe17fd3f9f0ba5e8d9b#commitcomment-9717168"}
+},
+
+{
+  "tags": [
+    "git"
+  ],
+  "title": "What is a `gitignore` file?",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/bb6a2499ed687e07d2902fe17fd3f9f0ba5e8d9b#commitcomment-9715909"}
+},
+
+{
+  "tags": [
+    "git"
+  ],
+  "title": "Don't invent 'gitignore', Look for an already published gitignore for various use cases",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/ccea9fbf7f56d0f508f95ce20edab4d50233b8c6#commitcomment-9715940"}
+},
+
+{
+  "tags": [
+    "android-ecosystem"
+  ],
+  "title": "Select an appropriate, scalable package name",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/cd20e62392b616647586a9d3b22187bd9862075e#commitcomment-9718393"}
+},
+
+{
+  "tags": [
+    "android-ecosystem"
+  ],
+  "title": "A Manifest is a public contract of your app",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/cd20e62392b616647586a9d3b22187bd9862075e#commitcomment-9718540"}
+}]
