@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tipz-debug</string>
+    <string name="dummy">DummyText123-Debug</string>
 </resources>
