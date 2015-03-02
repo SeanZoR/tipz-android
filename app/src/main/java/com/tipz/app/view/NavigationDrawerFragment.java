@@ -64,9 +64,6 @@ public class NavigationDrawerFragment extends BaseFragment<TipzApplication> {
             mCurrentSelectedPosition = savedInstanceState.getInt(STATE_SELECTED_POSITION);
             mFromSavedInstanceState = true;
         }
-
-        // Select either the default item (0) or the last selected item.
-        selectItem(mCurrentSelectedPosition);
     }
 
     @Override
@@ -99,6 +96,9 @@ public class NavigationDrawerFragment extends BaseFragment<TipzApplication> {
                         "Temp1", "Temp2",
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
+
+        // Select either the default item (0) or the last selected item.
+        selectItem(mCurrentSelectedPosition);
     }
 
     @Override
