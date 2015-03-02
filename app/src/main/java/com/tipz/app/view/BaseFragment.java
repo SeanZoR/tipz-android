@@ -52,7 +52,9 @@ public abstract class BaseFragment<T extends Application> extends Fragment {
         setHasOptionsMenu(doesHaveOptionsMenu());
     }
 
-    protected abstract boolean doesHaveOptionsMenu();
+    protected boolean doesHaveOptionsMenu(){
+        return false;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
