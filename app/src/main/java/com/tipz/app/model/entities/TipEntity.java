@@ -2,10 +2,13 @@ package com.tipz.app.model.entities;
 
 import android.net.Uri;
 
+import com.google.gson.annotations.SerializedName;
 import com.tipz.app.control.content_provider.TipzContentProvider;
 import com.tipz.helpers.control.content_provider.ProviderEntity;
 import com.tipz.helpers.control.database.annotations.DbBinder;
 import com.tipz.helpers.control.database.DbEntity;
+import com.tipz.helpers.control.database.annotations.DbPrimaryKey;
+import com.tipz.helpers.control.database.annotations.DbUniquekey;
 
 import java.io.Serializable;
 
@@ -34,9 +37,18 @@ public class TipEntity implements Serializable, DbEntity, ProviderEntity {
 
 
     public static class DB {
+        public static final String ID = "_id";
         public static final String CREATED_TIMESTAMP = "createdTimestamp";
         public static final String TITLE = "title";
     }
+
+    /***
+     * Leading ID of entity, must be unique also from server side
+     */
+    @DbPrimaryKey
+    @DbBinder(dbName = DB.ID)
+    @SerializedName("_id")
+    public String id;
 
     /***
      * A unix-timestamp of created time

@@ -98,6 +98,7 @@ public class TipzService extends WakefulIntentService {
         int contentIndex = 0;
         for (TipEntity tip : tipEntities) {
             ContentValues content = new ContentValues();
+            content.put(TipEntity.DB.ID, tip.id);
             content.put(TipEntity.DB.CREATED_TIMESTAMP, tip.createdTimestamp);
             content.put(TipEntity.DB.TITLE, tip.title);
 
