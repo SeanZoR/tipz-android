@@ -27,14 +27,22 @@ android {
     signingConfigs {
         release {
             // Load the properties file
-            Properties keysProps = new Properties()
-            keysProps.load(new FileInputStream(file('../keys/tipz-production.properties')))
+            File productionPropFile = file('../keys/tipz-production.properties');
+            File productionKeyFile = file('../keys/tipz-production.keystore');
+            if (productionKeyFile.exists() && productionPropFile.exists()) {
+                Properties keysProps = new Properties()
+                keysProps.load(new FileInputStream(productionPropFile))
 
-            // Set the store signing config values
-            storeFile file('../keys/tipz-production.keystore')
-            storePassword keysProps["KEY_RELEASE_STORE_PASS"]
-            keyAlias 'android'
-            keyPassword keysProps["KEY_RELEASE_ALIAS_PASS"]
+                // Set the store signing config values
+                storeFile productionKeyFile
+                storePassword keysProps["KEY_RELEASE_STORE_PASS"]
+                keyAlias 'android'
+                keyPassword keysProps["KEY_RELEASE_ALIAS_PASS"]
+            }
+            else{
+                printf('\n\nWARNING!\n Did not find Production Release Key/Properties files! ' +
+                        '\nRelease will use Debug Key\n\n');
+            }
         }
 
         debug {
