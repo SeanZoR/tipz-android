@@ -97,10 +97,17 @@ public class TipzService extends WakefulIntentService {
         // Create content values for each entity
         int contentIndex = 0;
         for (TipEntity tip : tipEntities) {
+
+            // Before inserting the new values from the API, we must take
+            // locally saved values and set them so we will not override them.
+            // (The ContentProvider is inserting with "CONFLICT_REPLACE" flag)
+            tip.initWithPreviousValuesFromProvider(getContentResolver());
+            
             ContentValues content = new ContentValues();
             content.put(TipEntity.DB.ID, tip.id);
             content.put(TipEntity.DB.CREATED_TIMESTAMP, tip.createdTimestamp);
             content.put(TipEntity.DB.TITLE, tip.title);
+            content.put(TipEntity.DB.IS_FAVORITE, tip.isFavorite);
 
             // Add the content to the all of contents
             allContent[contentIndex] = content;

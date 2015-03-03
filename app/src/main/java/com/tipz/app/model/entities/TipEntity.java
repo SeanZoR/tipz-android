@@ -40,6 +40,7 @@ public class TipEntity implements Serializable, DbEntity, ProviderEntity {
         public static final String ID = "_id";
         public static final String CREATED_TIMESTAMP = "createdTimestamp";
         public static final String TITLE = "title";
+        public static final String IS_FAVORITE = "IS_FAVORITE";
     }
 
     /***
@@ -50,7 +51,7 @@ public class TipEntity implements Serializable, DbEntity, ProviderEntity {
     @SerializedName("_id")
     public String id;
 
-    /***
+    /**
      * A unix-timestamp of created time
      */
     @DbBinder(dbName = DB.CREATED_TIMESTAMP)
@@ -61,4 +62,38 @@ public class TipEntity implements Serializable, DbEntity, ProviderEntity {
      */
     @DbBinder(dbName = DB.TITLE)
     public String title;
+
+    /**
+     * Favorite mark, handled locally right now
+     */
+    @DbBinder(dbName = DB.IS_FAVORITE)
+    public boolean isFavorite = false;
+
+    /**
+     * Gets an existing values of a tip from a specific ID
+     * and saves them to current Entity
+     *
+     * @param provider - ContentProvider reference
+     */
+    public void initWithPreviousValuesFromProvider(ContentResolver provider) {
+
+        // Handle the isFavorite value
+        Cursor favoriteQuery = null;
+        try {
+            favoriteQuery = provider.query(TipEntity.CONTENT_URI,
+                    new String[]{TipEntity.DB.IS_FAVORITE},
+                    TipEntity.DB.ID + "=?",
+                    new String[]{id},
+                    null);
+
+            // Return true if the there's a positive value in the Favorite column
+            isFavorite = favoriteQuery.moveToFirst() &&
+                    favoriteQuery.getInt(favoriteQuery.getColumnIndex(DB.IS_FAVORITE)) != 0;
+        } finally {
+            // Make sure the cursor is being closed if it was opened
+            if (favoriteQuery != null && !favoriteQuery.isClosed()) {
+                favoriteQuery.close();
+            }
+        }
+    }
 }
