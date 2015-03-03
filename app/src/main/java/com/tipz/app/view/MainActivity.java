@@ -12,6 +12,7 @@ import com.tipz.app.BuildConfig;
 import com.tipz.app.R;
 import com.tipz.app.TipzApplication;
 import com.tipz.app.control.services.TipzService;
+import com.tipz.app.view.fragments.tips.TipsFavoriteFragment;
 import com.tipz.app.view.fragments.tips.TipsFragment;
 
 public class MainActivity extends BaseActivity<TipzApplication>
@@ -19,6 +20,7 @@ public class MainActivity extends BaseActivity<TipzApplication>
 
     // Represents the tag of the added fragments
     private final String TAG_FRAGMENT_TIPS_FEATURED = TAG + "TAG_FRAGMENT_TIPS_FEATURED";
+    private final String TAG_FRAGMENT_TIPS_FAVORITE = TAG + "TAG_FRAGMENT_TIPS_FAVORITE";
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -31,6 +33,7 @@ public class MainActivity extends BaseActivity<TipzApplication>
     private CharSequence mTitle;
 
     private TipsFragment mTipsFeaturedFragment;
+    private TipsFragment mTipsFavoriteFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +43,15 @@ public class MainActivity extends BaseActivity<TipzApplication>
         // If this is the first time the Activity is created (and it's not a restart of it)
         if (savedInstanceState == null) {
             mTipsFeaturedFragment = new TipsFragment();
+            mTipsFavoriteFragment = new TipsFavoriteFragment();
         }
         // Else, it's a restart, just fetch the already existing fragments
         else {
             FragmentManager fragmentManager = getSupportFragmentManager();
             mTipsFeaturedFragment = (TipsFragment) fragmentManager.findFragmentByTag(
                     TAG_FRAGMENT_TIPS_FEATURED);
+            mTipsFavoriteFragment = (TipsFragment) fragmentManager.findFragmentByTag(
+                    TAG_FRAGMENT_TIPS_FAVORITE);
         }
 
         // This fragment is instantiated in a static way, so just find it by ID and reference it
@@ -78,9 +84,9 @@ public class MainActivity extends BaseActivity<TipzApplication>
                 tagToSetInContainer = TAG_FRAGMENT_TIPS_FEATURED;
                 break;
             case 1:
-                if (BuildConfig.DEBUG)
-                    Toast.makeText(this, "Not implemented yet", Toast.LENGTH_SHORT).show();
-                return;
+                fragmentToSetInContainer = mTipsFavoriteFragment;
+                tagToSetInContainer = TAG_FRAGMENT_TIPS_FAVORITE;
+                break;
         }
 
         // Now do the actual swap of views
