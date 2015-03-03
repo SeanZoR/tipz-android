@@ -43,7 +43,23 @@ public class TipEntity implements Serializable, DbEntity, ProviderEntity {
         public static final String IS_FAVORITE = "IS_FAVORITE";
     }
 
-    /***
+    public TipEntity() {
+    }
+
+    /**
+     * Construct the entity using a cursor
+     *
+     * @param cursor the cursor with data, must point to the exact line
+     *               containing the current entity you wish to construct
+     */
+    public TipEntity(Cursor cursor) {
+        this.id = cursor.getString(cursor.getColumnIndex(DB.ID));
+        this.title = cursor.getString(cursor.getColumnIndex(DB.TITLE));
+        this.createdTimestamp = cursor.getLong(cursor.getColumnIndex(DB.CREATED_TIMESTAMP));
+        this.isFavorite = cursor.getInt(cursor.getColumnIndex(DB.IS_FAVORITE)) != 0;
+    }
+
+    /**
      * Leading ID of entity, must be unique also from server side
      */
     @DbPrimaryKey

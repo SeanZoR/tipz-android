@@ -80,13 +80,7 @@ public class TipsFragment extends BaseDataFragment<TipzApplication, TipEntity> {
             // Run on the cursor and extract data for each tip
             do {
                 // Create the tip and extract data
-                currTip = new TipEntity();
-                currTip.title = cursor.getString(
-                        cursor.getColumnIndex(TipEntity.DB.TITLE));
-                currTip.createdTimestamp = cursor.getLong(
-                        cursor.getColumnIndex(TipEntity.DB.CREATED_TIMESTAMP));
-
-                // Add to list
+                currTip = new TipEntity(cursor);
                 mTips.add(currTip);
             } while (cursor.moveToNext());
         }
