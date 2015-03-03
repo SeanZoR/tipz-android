@@ -1,14 +1,17 @@
 package com.tipz.app.model.entities;
 
+import android.content.AsyncQueryHandler;
+import android.content.ContentResolver;
+import android.content.ContentValues;
+import android.database.Cursor;
 import android.net.Uri;
 
 import com.google.gson.annotations.SerializedName;
 import com.tipz.app.control.content_provider.TipzContentProvider;
 import com.tipz.helpers.control.content_provider.ProviderEntity;
-import com.tipz.helpers.control.database.annotations.DbBinder;
 import com.tipz.helpers.control.database.DbEntity;
+import com.tipz.helpers.control.database.annotations.DbBinder;
 import com.tipz.helpers.control.database.annotations.DbPrimaryKey;
-import com.tipz.helpers.control.database.annotations.DbUniquekey;
 
 import java.io.Serializable;
 
@@ -111,5 +114,39 @@ public class TipEntity implements Serializable, DbEntity, ProviderEntity {
                 favoriteQuery.close();
             }
         }
+    }
+
+    /**
+     * Updates the favorite field in the entity and in the content provider,
+     * it is being done in an ASYNC manner
+     *
+     * @param contentResolver
+     * @param favorite
+     */
+    public void setFavorite(ContentResolver contentResolver, boolean favorite) {
+
+        // Set the value in memory
+        this.isFavorite = favorite;
+
+        // Update to Content Provider
+        ContentValues valuesToUpdate = new ContentValues();
+        valuesToUpdate.put(DB.IS_FAVORITE, favorite ? "1" : "0");
+        updateEntityInAsync(contentResolver, valuesToUpdate);
+    }
+
+    public void updateEntityInAsync(final ContentResolver contentResolver, ContentValues content) {
+        final int DUMMY_TOKEN = -1;
+
+        AsyncQueryHandler handler =
+                new AsyncQueryHandler(contentResolver) {
+                    @Override
+                    protected void onUpdateComplete(int token, Object cookie, int result) {
+                        super.onUpdateComplete(token, cookie, result);
+                    }
+                };
+
+        // We are using a "LIKE" to compare the ID because it's a string
+        handler.startUpdate(DUMMY_TOKEN, null, this.getProviderUri(),
+                content, DB.ID + " LIKE ?", new String[]{this.id});
     }
 }
