@@ -1,6 +1,7 @@
 package com.tipz.app.view.fragments.tips;
 
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.tipz.app.R;
@@ -33,9 +34,19 @@ public class TipsAdapter extends BaseRecyclerArrayAdapter<TipsAdapter.TipViewHol
     }
 
     @Override
-    public void onBindViewHolderToData(TipViewHolder holder, TipEntity data) {
+    public void onBindViewHolderToData(TipViewHolder holder, final TipEntity data) {
         // Bind the data to the view holder
         holder.title.setText(data.title);
+        holder.favorite.setOnCheckedChangeListener(null);
+        holder.favorite.setChecked(data.isFavorite);
+
+        // Bind actions
+        holder.favorite.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                data.setFavorite(buttonView.getContext().getContentResolver(), isChecked);
+            }
+        });
     }
 
 
@@ -48,5 +59,7 @@ public class TipsAdapter extends BaseRecyclerArrayAdapter<TipsAdapter.TipViewHol
         @ViewHolderBinder(resId = R.id.item_tips_title)
         public TextView title;
 
+        @ViewHolderBinder(resId = R.id.item_tips_favorite)
+        public CompoundButton favorite;
     }
 }

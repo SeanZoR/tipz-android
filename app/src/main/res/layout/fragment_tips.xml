@@ -4,4 +4,6 @@
     android:id="@+id/fragment_tips_recycler_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
     tools:context="com.tipz.app.view.fragments.tips.TipsFragment" />

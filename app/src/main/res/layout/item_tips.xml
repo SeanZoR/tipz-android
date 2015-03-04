@@ -5,12 +5,37 @@
     android:layout_height="match_parent"
     card:cardCornerRadius="1dp">
 
-    <TextView
-        android:id="@+id/item_tips_title"
+    <!-- We must add a relative layout inside the CardView. The CardView inherits from FrameLayout
+    which doesn't have the RelativeLayout capabilities we are looking for -->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/dummy"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:padding="5dp">
+
+        <ToggleButton
+            android:id="@+id/item_tips_favorite"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@android:drawable/btn_star"
+            android:checked="false"
+            android:gravity="center|left"
+            android:textOff="@null"
+            android:textOn="@null" />
+
+        <TextView
+            android:id="@+id/item_tips_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/item_tips_favorite"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text="@string/dummy"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
 </android.support.v7.widget.CardView>
