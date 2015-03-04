@@ -95,4 +95,9 @@ public class TipsFragment extends BaseDataFragment<TipzApplication, TipEntity> {
     protected Uri getFragmentDataUri() {
         return TipEntity.CONTENT_URI;
     }
+
+    @Override
+    public int getTitle() {
+        return R.string.fragment_tips_featured_title;
+    }
 }

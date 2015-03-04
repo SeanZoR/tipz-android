@@ -8,4 +8,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="dummy"></string> <!-- Intentionally left blank, on release versions -->
+
+    <!-- Fragment titles -->
+    <string name="fragment_tips_featured_title">Featured</string>
+    <string name="fragment_tips_favorite_title">Favorites</string>
 </resources>

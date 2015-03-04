@@ -12,6 +12,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -77,5 +78,14 @@ public abstract class BaseFragment<T extends Application> extends Fragment {
 
     protected ActionBar getActionBar() {
         return ((ActionBarActivity) getActivity()).getSupportActionBar();
+    }
+
+    /***
+     * Used to represent the title of the screen
+     * Override it in your fragment to suggest some title.
+     * @return The res title to display
+     */
+    public int getTitle(){
+        return -1;
     }
 }

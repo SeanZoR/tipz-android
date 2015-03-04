@@ -93,7 +93,7 @@ public class NavigationDrawerFragment extends BaseFragment<TipzApplication> {
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
                 new String[]{
-                        "Featured", "Recent",
+                        "Featured", "Favorites",
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 

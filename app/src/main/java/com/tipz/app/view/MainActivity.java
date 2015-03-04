@@ -54,11 +54,13 @@ public class MainActivity extends BaseActivity<TipzApplication>
                     TAG_FRAGMENT_TIPS_FAVORITE);
         }
 
+        // This is the title of the Activity, but it is expected that the inflated
+        // fragments will come with their own title and than it will be overridden
+        mTitle = getTitle();
+
         // This fragment is instantiated in a static way, so just find it by ID and reference it
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
-
-        mTitle = getTitle();
 
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
@@ -67,14 +69,12 @@ public class MainActivity extends BaseActivity<TipzApplication>
                 mToolbar);
 
         WakefulIntentService.sendWakefulWork(this, TipzService.actionGetTipsIntent(this));
-
-
     }
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
 
-        Fragment fragmentToSetInContainer = null;
+        BaseFragment fragmentToSetInContainer = null;
         String tagToSetInContainer = null;
 
         // TODO: Create a real array/enum of possible drawer items
@@ -93,6 +93,12 @@ public class MainActivity extends BaseActivity<TipzApplication>
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, fragmentToSetInContainer, tagToSetInContainer)
                 .commit();
+
+        // Set the title of the activity according to the fragment
+        int titleRes = fragmentToSetInContainer.getTitle();
+        if (titleRes > 0) {
+            mTitle = getString(titleRes);
+        }
     }
 
     public void restoreActionBar() {
