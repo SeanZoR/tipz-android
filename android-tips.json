@@ -90,7 +90,7 @@
 
 {
   "tags": [
-    "android-ecosystem"
+    "build"
   ],
   "title": "Select an appropriate, scalable package name",
   "type": "link",
@@ -99,9 +99,755 @@
 
 {
   "tags": [
-    "android-ecosystem"
+    "build"
   ],
   "title": "A Manifest is a public contract of your app",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/cd20e62392b616647586a9d3b22187bd9862075e#commitcomment-9718540"}
+},
+
+{
+  "tags": [
+    "gradle"
+  ],
+  "title": "Building an Android library",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/a11a7c228c2f7fa5b8ffcad2341e561d9af27767#commitcomment-9736925"}
+},
+
+
+{
+  "tags": [
+    "build"
+  ],
+  "title": "Always compile to the latest SDK version",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/a11a7c228c2f7fa5b8ffcad2341e561d9af27767#commitcomment-9736741"}
+},
+
+
+{
+  "tags": [
+    "build"
+  ],
+  "title": "Read the change log of the Android Build Tools",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/a11a7c228c2f7fa5b8ffcad2341e561d9af27767#commitcomment-9737009"}
+},
+
+{
+  "tags": [
+    "build"
+  ],
+  "title": "Manifest's Package name vs build.gradle's Application ID",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/a11a7c228c2f7fa5b8ffcad2341e561d9af27767#commitcomment-9737200"}
+},
+
+
+{
+  "tags": [
+    "publish"
+  ],
+  "title": "Meet Android Dashboard",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/a11a7c228c2f7fa5b8ffcad2341e561d9af27767#commitcomment-9737509"}
+},
+
+
+{
+  "tags": [
+    "publish"
+  ],
+  "title": "Selecting the Android version you support (minSdkVersion)",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/a11a7c228c2f7fa5b8ffcad2341e561d9af27767#commitcomment-9737635"}
+},
+
+{
+  "tags": [
+    "lifecycle"
+  ],
+  "title": "Create a Launcher Activity",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/c2a930a5b3838ee7d6cc3a4528339fab72bd22f1#commitcomment-9740290"}
+},
+
+
+{
+  "tags": [
+    "application-class"
+  ],
+  "title": "Use Application class - but don't abuse it",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/72730b9b7d149165a446fc3bf82411b3b2f69571#commitcomment-9740545"}
+},
+
+
+{
+  "tags": [
+    "application-class"
+  ],
+  "title": "Don't use Application class as a single tone",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/72730b9b7d149165a446fc3bf82411b3b2f69571#commitcomment-9740564"}
+},
+
+{
+  "tags": [
+    "application-class"
+  ],
+  "title": "Don't do length operations in the Application class",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/72730b9b7d149165a446fc3bf82411b3b2f69571#commitcomment-9740598"}
+},
+
+
+{
+  "tags": [
+    "application-class"
+  ],
+  "title": "Assume the Application class values never gets deleted",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/72730b9b7d149165a446fc3bf82411b3b2f69571#commitcomment-9740679"}
+},
+
+
+{
+  "tags": [
+    "log"
+  ],
+  "title": "Keep your logs tidy",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/dc023ff3e15097d0a7a73146577c6a8124739fde#commitcomment-9753363"}
+},
+
+{
+  "tags": [
+    "memory"
+  ],
+  "title": "Context and memory leaks",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/dc023ff3e15097d0a7a73146577c6a8124739fde#commitcomment-9773970"}
+},
+
+
+{
+  "tags": [
+    ""
+  ],
+  "title": "",
+  "type": "link",
+  "payload": {"href": ""}
+},
+
+
+{
+  "tags": [
+    "lint"
+  ],
+  "title": "SuppressLint only when needed",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/43ac8f6646d245bdcbad5b9c19fae94bf6dfb754#commitcomment-9774434"}
+},
+
+{
+  "tags": [
+    "scope"
+  ],
+  "title": "Request Resources and not Context",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/43ac8f6646d245bdcbad5b9c19fae94bf6dfb754#commitcomment-9774497"}
+},
+
+
+{
+  "tags": [
+    "shared-preferences"
+  ],
+  "title": "Shared Preference commit() is not the only option",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/43ac8f6646d245bdcbad5b9c19fae94bf6dfb754#commitcomment-9774555"}
+},
+
+
+{
+  "tags": [
+    "shared-preferences"
+  ],
+  "title": "Smartly organized SharedPreferences",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/43ac8f6646d245bdcbad5b9c19fae94bf6dfb754#commitcomment-9774165"}
+},
+
+{
+  "tags": [
+    "shared-preferences", "security"
+  ],
+  "title": "Do not store secrets in the Shared Preferences",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/4351ca5b7d425c45ec122d4c77ea06c66aabf782#commitcomment-9855312"}
+},
+
+
+{
+  "tags": [
+    "security"
+  ],
+  "title": "Strings encryption example",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/f57a0f145248cc3a3803b7b9c7a4c2a09c243697#commitcomment-9855329"}
+},
+
+
+{
+  "tags": [
+    "lifecycle"
+  ],
+  "title": "A run-time check for version upgrade",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/ef84df2f74798fb1cf87f47e942afe34954adfcb#commitcomment-9855338"}
+},
+
+{
+  "tags": [
+    "support-library"
+  ],
+  "title": " Prefer Support Library over built in APIs (even if your minimum API allows it)",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/8f0da67591a8aa45f3049bfebcde57e51e4dbbd8#commitcomment-9856981"}
+},
+
+
+{
+  "tags": [
+    "java"
+  ],
+  "title": "For your next project, Think Generics now",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/8f0da67591a8aa45f3049bfebcde57e51e4dbbd8#commitcomment-9857020"}
+},
+
+
+{
+  "tags": [
+    "lifecycle"
+  ],
+  "title": "If you need to know when your Activity is in resume mode",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/8f0da67591a8aa45f3049bfebcde57e51e4dbbd8#commitcomment-9857027"}
+},
+
+{
+  "tags": [
+    ""
+  ],
+  "title": "",
+  "type": "link",
+  "payload": {"href": ""}
+},
+
+
+{
+  "tags": [
+    "boilerplate"
+  ],
+  "title": "Minimize 'copy-paste' in your code (Invest in your boilerplate code)",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/8f0da67591a8aa45f3049bfebcde57e51e4dbbd8#commitcomment-9856894"}
+},
+
+
+{
+  "tags": [
+    "gradle"
+  ],
+  "title": "Prefer a remote maven dependency over a local jar",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/99ef68f942444f6b4ad406f80eaab1ec6e79dc70#commitcomment-9857077"}
+},
+
+{
+  "tags": [
+    "gradle"
+  ],
+  "title": "Always choose your dependencies explicitly",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/99ef68f942444f6b4ad406f80eaab1ec6e79dc70#commitcomment-9857066"}
+},
+
+
+{
+  "tags": [
+    "design", "resources"
+  ],
+  "title": "Use AppCompat themes",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/77898a8c3cd4be561459ce26600863ea73d3e904#commitcomment-9861488"}
+},
+
+
+{
+  "tags": [
+    "resources"
+  ],
+  "title": "Reuse platform resources (strings, colors...)",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/77898a8c3cd4be561459ce26600863ea73d3e904#commitcomment-9861522"}
+},
+
+{
+  "tags": [
+    "design", "resources"
+  ],
+  "title": "Styles, Themes and dimens = CSS ?",
+  "type": "link",
+  "payload": {"href": "http://blog.android-develop.com/2014/03/styles-themes-and-dimens-css.html"}
+},
+
+
+{
+  "tags": [
+    "design", "material"
+  ],
+  "title": "Prefer Toolbar over ActionBar",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/b2be4bac63c22c237ac191ac17835aa8bc6ae34a#commitcomment-9861570"}
+},
+
+
+{
+  "tags": [
+    "android-studio"
+  ],
+  "title": "Know (and use) code templates",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/7cae51ccfbdd0e72c62cfd6f3bb39f558952c6b3#commitcomment-9861658"}
+}
+
+{
+  "tags": [
+    "organize"
+  ],
+  "title": "Set up sensible folders for your Java files",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/0b6cf4f398629e0dd1286fdde5ca7a16e2bb50b8#commitcomment-9900595"}
+},
+
+
+{
+  "tags": [
+    "resources", "layouts"
+  ],
+  "title": "Re-use XML layouts with <include.../>",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/0b6cf4f398629e0dd1286fdde5ca7a16e2bb50b8#commitcomment-9900975"}
+}
+
+{
+  "tags": [
+    "fragment"
+  ],
+  "title": "Pick your Fragment: Static or Dynamic",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/0b6cf4f398629e0dd1286fdde5ca7a16e2bb50b8#commitcomment-9900927"}
+},
+
+
+{
+  "tags": [
+    "debug", "build"
+  ],
+  "title": "When in need of debug sections, use BuildConfig.DEBUG",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/4d8f22c54209fd664b1e45cc7d0bf5705021bce2#commitcomment-9901349"}
+}
+
+{
+  "tags": [
+    "performance", "performance-tools"
+  ],
+  "title": "Protect the UI Thread from yourself (StrictMode)",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/4d8f22c54209fd664b1e45cc7d0bf5705021bce2#commitcomment-9901333"}
+},
+
+
+{
+  "tags": [
+    "security", "publish"
+  ],
+  "title": "Production signing-config key should be kept private",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/45b478ea91351ad68bbc36ed2c8c601c90f925b2#commitcomment-9961266"}
+}
+
+{
+  "tags": [
+    "publish"
+  ],
+  "title": "Don't lose your production signing-config key or password",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/45b478ea91351ad68bbc36ed2c8c601c90f925b2#commitcomment-9961294"}
+},
+
+
+{
+  "tags": [
+    "build", "team"
+  ],
+  "title": "Store your debug key in git for your team use",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/45b478ea91351ad68bbc36ed2c8c601c90f925b2#commitcomment-9961328"}
+}
+
+{
+  "tags": [
+    "publish", "build", "gradle"
+  ],
+  "title": "Create installable 'side by side' debug and release APK (or other)",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/5a3bca7790e9abfe357cf5cd20da8b49c49170ee#commitcomment-9961578"}
+},
+
+
+{
+  "tags": [
+    "proguard"
+  ],
+  "title": "Proguard your release versions, not the debug",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/91fc4d3d2d88f4cbd7a88e8ca908712c3fa81b2a#commitcomment-9969211"}
+}
+
+{
+  "tags": [
+    "proguard", "security"
+  ],
+  "title": "Use Proguard",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/91fc4d3d2d88f4cbd7a88e8ca908712c3fa81b2a#commitcomment-9969191"}
+},
+
+
+{
+  "tags": [
+    "proguard"
+  ],
+  "title": "What's in the stock Android proguard file?",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/91fc4d3d2d88f4cbd7a88e8ca908712c3fa81b2a#commitcomment-9969229"}
+}
+
+{
+  "tags": [
+    "proguard"
+  ],
+  "title": "Run Proguard on a frequent basis",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/91fc4d3d2d88f4cbd7a88e8ca908712c3fa81b2a#commitcomment-9969235"}
+},
+
+
+{
+  "tags": [
+    "proguard"
+  ],
+  "title": "Create seperate proguard file for each module/library",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/d956bf9f84f41a10dc57694d2d6f1b09a24f99fa#commitcomment-9969244"}
+}
+
+{
+  "tags": [
+    "proguard", "json", "library"
+  ],
+  "title": "Planning on using GSON/Jackson parsers?",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/d956bf9f84f41a10dc57694d2d6f1b09a24f99fa#commitcomment-9969249"}
+},
+
+
+{
+  "tags": [
+    "librarys"
+  ],
+  "title": "Checklist for adding 3rd party libraries",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/d956bf9f84f41a10dc57694d2d6f1b09a24f99fa#commitcomment-9969333"}
+}
+
+{
+  "tags": [
+    "library", "legal"
+  ],
+  "title": "Track your 3rd party libraries licenses",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/167725a4331ad2487d4949a8c2b0e5d99e20b615#commitcomment-9969266"}
+},
+
+
+{
+  "tags": [
+    "library", "legal"
+  ],
+  "title": "What 3rd party library license am I allowed to use",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/167725a4331ad2487d4949a8c2b0e5d99e20b615#commitcomment-9969295"}
+}
+
+{
+  "tags": [
+    "proguard", "library"
+  ],
+  "title": "Proguard for 3rd party libraries",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/167725a4331ad2487d4949a8c2b0e5d99e20b615#commitcomment-9969302"}
+},
+
+
+{
+  "tags": [
+    "git", "library"
+  ],
+  "title": "Use git's submodule option when fetching a full git repo",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/b2eb56c2a29118dcd681b93edb14c10ab309e58c#commitcomment-9970962"}
+}
+
+{
+  "tags": [
+    "build", "gradle"
+  ],
+  "title": "Gradle build is slow, try avoiding creation of new modules if possible",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/b2eb56c2a29118dcd681b93edb14c10ab309e58c#commitcomment-9970990"}
+},
+
+
+{
+  "tags": [
+    "permission", "manifest"
+  ],
+  "title": "Carefully add new permissions",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/b2eb56c2a29118dcd681b93edb14c10ab309e58c#commitcomment-9971012"}
+}
+
+{
+  "tags": [
+    "security", "manifest"
+  ],
+  "title": "Think About android:allowBackup",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/0cedaad44e244968413e6aea79713506aa351791#commitcomment-9971017"}
+},
+
+
+{
+  "tags": [
+    "security", "manifest"
+  ],
+  "title": "Guard your components with android:exported='false'",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/b89ca73c2fbb418edad7657fdfcf77b87cab4b05#commitcomment-10036952"}
+}
+
+{
+  "tags": [
+    "service", "ui-thread"
+  ],
+  "title": "You probably should go with IntentService",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/b89ca73c2fbb418edad7657fdfcf77b87cab4b05#commitcomment-10037016"}
+},
+
+
+{
+  "tags": [
+    "clean-code", "lifecycle"
+  ],
+  "title": "Provide an easy instantiation to your component (Activity, Service & Fragment)",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/b89ca73c2fbb418edad7657fdfcf77b87cab4b05#commitcomment-10037202"}
+}
+
+{
+  "tags": [
+    "library", "json"
+  ],
+  "title": "Use serialization libs for your JSON's data",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/131bc2fa8e66961db8e2cca2dcd42d4c44411887#commitcomment-10037459"}
+},
+
+
+{
+  "tags": [
+    "resource", "config"
+  ],
+  "title": "Use <string...> resources to store configuration data",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/131bc2fa8e66961db8e2cca2dcd42d4c44411887#commitcomment-10038237"}
+}
+
+{
+  "tags": [
+    "manifest", "gradle", "build-variant"
+  ],
+  "title": "In the Manifest.xml use ${applicationId}",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/f3887c2ce3d253fff79f26ad950c1a86fd225f4b#commitcomment-10038337"}
+},
+
+
+{
+  "tags": [
+    "performance", "pojo"
+  ],
+  "title": "Avoid Internal Getters/Setters",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/a8bb91a10bcef63aa1f022df71c75613095fd903#commitcomment-10038502"}
+}
+
+{
+  "tags": [
+    "db", "performance"
+  ],
+  "title": "Bulk/Transactional inserts are tremendously faster",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/7139abaffd099f50f388d3187464ff034d47c1c4#commitcomment-10038426"}
+},
+
+
+{
+  "tags": [
+    "build", "versioning", "ci"
+  ],
+  "title": "Clean automated versioning",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/5e56d5e9fcf267fd9aa28631d035caca6bb5b204#commitcomment-10038535"}
+}
+
+{
+  "tags": [
+    "build", "versioning", "ci"
+  ],
+  "title": "Use a version numbering scheme",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/5e56d5e9fcf267fd9aa28631d035caca6bb5b204#commitcomment-10038603"}
+},
+
+
+{
+  "tags": [
+    "resource", "layouts"
+  ],
+  "title": "Custom attributes should use res-auto xmlns",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/0820c0e64c2b94c1128c5b4d4f4e86b319900c9c#commitcomment-10038961"}
+}
+
+{
+  "tags": [
+    "organize", "resource"
+  ],
+  "title": "Create naming conventions for your ID's",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/0820c0e64c2b94c1128c5b4d4f4e86b319900c9c#commitcomment-10039031"}
+},
+
+
+{
+  "tags": [
+    "design", "material", "support-library"
+  ],
+  "title": "Hello CardView",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/0820c0e64c2b94c1128c5b4d4f4e86b319900c9c#commitcomment-10038842"}
+}
+
+{
+  "tags": [
+    "release", "build-variant"
+  ],
+  "title": "Don't put dummy text in release builds",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/f631ff756449d32143a57c9138cc2d9e8b28ac44#commitcomment-10039130"}
+},
+
+
+{
+  "tags": [
+    "db", "content-provider"
+  ],
+  "title": "Storing in DB? use _id and not id",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/9d57c13e92808268e25731188829bdee197ebe31#commitcomment-10039231"}
+}
+
+{
+  "tags": [
+    "material", "adapter", "animation", "clean-code"
+  ],
+  "title": "Goodbye old List/Grid and Adapters, Hello RecyclerView",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/e2ca41518140e412044862e537da521f98de8994#commitcomment-10039312"}
+},
+
+
+{
+  "tags": [
+    "fragment"
+  ],
+  "title": "Fragments are automatically recreated upon Activity re-create",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/eb33b5e2040c2ca1d85083937a8c4907a6c91045#commitcomment-10039446"}
+}
+
+{
+  "tags": [
+    "db", "ui-thread", "performance"
+  ],
+  "title": "DB operations are heavy, use AsyncQueryHandler",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/a94b2e057a22506dbc81bd16e5589064fc200e43#commitcomment-10039511"}
+},
+
+
+{
+  "tags": [
+    "adapter"
+  ],
+  "title": "Adapter view data is always there, clear it if not already overriding it",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/d1831095cdbea9d20a9c38a9a2717bd5ce82b69e#commitcomment-10039589"}
+}
+
+{
+  "tags": [
+    "resource", "drawable", "platform"
+  ],
+  "title": "Carefully use platform drawables: '@android:drawable/...'",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/d1831095cdbea9d20a9c38a9a2717bd5ce82b69e#commitcomment-10039743"}
+},
+
+
+{
+  "tags": [
+    "resource"
+  ],
+  "title": "You can use '@null' in attributes values",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/d1831095cdbea9d20a9c38a9a2717bd5ce82b69e#commitcomment-10039630"}
+}
+
+{
+  "tags": [
+    "security", "proguard"
+  ],
+  "title": "Silent the logs",
+  "type": "link",
+  "payload": {"href": "https://github.com/tipz/tipz-android/commit/aa1b52711ff1373a851f14dce334dd0f25d6925d#commitcomment-10039885"}
 }]
