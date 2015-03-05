@@ -423,7 +423,7 @@
   "title": "Know (and use) code templates",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/7cae51ccfbdd0e72c62cfd6f3bb39f558952c6b3#commitcomment-9861658"}
-}
+},
 
 {
   "tags": [
@@ -442,7 +442,7 @@
   "title": "Re-use XML layouts with <include.../>",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/0b6cf4f398629e0dd1286fdde5ca7a16e2bb50b8#commitcomment-9900975"}
-}
+},
 
 {
   "tags": [
@@ -461,7 +461,7 @@
   "title": "When in need of debug sections, use BuildConfig.DEBUG",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/4d8f22c54209fd664b1e45cc7d0bf5705021bce2#commitcomment-9901349"}
-}
+},
 
 {
   "tags": [
@@ -480,7 +480,7 @@
   "title": "Production signing-config key should be kept private",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/45b478ea91351ad68bbc36ed2c8c601c90f925b2#commitcomment-9961266"}
-}
+},
 
 {
   "tags": [
@@ -499,7 +499,7 @@
   "title": "Store your debug key in git for your team use",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/45b478ea91351ad68bbc36ed2c8c601c90f925b2#commitcomment-9961328"}
-}
+},
 
 {
   "tags": [
@@ -518,7 +518,7 @@
   "title": "Proguard your release versions, not the debug",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/91fc4d3d2d88f4cbd7a88e8ca908712c3fa81b2a#commitcomment-9969211"}
-}
+},
 
 {
   "tags": [
@@ -537,7 +537,7 @@
   "title": "What's in the stock Android proguard file?",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/91fc4d3d2d88f4cbd7a88e8ca908712c3fa81b2a#commitcomment-9969229"}
-}
+},
 
 {
   "tags": [
@@ -556,7 +556,7 @@
   "title": "Create seperate proguard file for each module/library",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/d956bf9f84f41a10dc57694d2d6f1b09a24f99fa#commitcomment-9969244"}
-}
+},
 
 {
   "tags": [
@@ -575,7 +575,7 @@
   "title": "Checklist for adding 3rd party libraries",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/d956bf9f84f41a10dc57694d2d6f1b09a24f99fa#commitcomment-9969333"}
-}
+},
 
 {
   "tags": [
@@ -594,7 +594,7 @@
   "title": "What 3rd party library license am I allowed to use",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/167725a4331ad2487d4949a8c2b0e5d99e20b615#commitcomment-9969295"}
-}
+},
 
 {
   "tags": [
@@ -613,7 +613,7 @@
   "title": "Use git's submodule option when fetching a full git repo",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/b2eb56c2a29118dcd681b93edb14c10ab309e58c#commitcomment-9970962"}
-}
+},
 
 {
   "tags": [
@@ -632,7 +632,7 @@
   "title": "Carefully add new permissions",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/b2eb56c2a29118dcd681b93edb14c10ab309e58c#commitcomment-9971012"}
-}
+},
 
 {
   "tags": [
@@ -651,7 +651,7 @@
   "title": "Guard your components with android:exported='false'",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/b89ca73c2fbb418edad7657fdfcf77b87cab4b05#commitcomment-10036952"}
-}
+},
 
 {
   "tags": [
@@ -670,7 +670,7 @@
   "title": "Provide an easy instantiation to your component (Activity, Service & Fragment)",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/b89ca73c2fbb418edad7657fdfcf77b87cab4b05#commitcomment-10037202"}
-}
+},
 
 {
   "tags": [
@@ -689,7 +689,7 @@
   "title": "Use <string...> resources to store configuration data",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/131bc2fa8e66961db8e2cca2dcd42d4c44411887#commitcomment-10038237"}
-}
+},
 
 {
   "tags": [
@@ -708,7 +708,7 @@
   "title": "Avoid Internal Getters/Setters",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/a8bb91a10bcef63aa1f022df71c75613095fd903#commitcomment-10038502"}
-}
+},
 
 {
   "tags": [
@@ -727,7 +727,7 @@
   "title": "Clean automated versioning",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/5e56d5e9fcf267fd9aa28631d035caca6bb5b204#commitcomment-10038535"}
-}
+},
 
 {
   "tags": [
@@ -746,7 +746,7 @@
   "title": "Custom attributes should use res-auto xmlns",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/0820c0e64c2b94c1128c5b4d4f4e86b319900c9c#commitcomment-10038961"}
-}
+},
 
 {
   "tags": [
@@ -765,7 +765,7 @@
   "title": "Hello CardView",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/0820c0e64c2b94c1128c5b4d4f4e86b319900c9c#commitcomment-10038842"}
-}
+},
 
 {
   "tags": [
@@ -784,7 +784,7 @@
   "title": "Storing in DB? use _id and not id",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/9d57c13e92808268e25731188829bdee197ebe31#commitcomment-10039231"}
-}
+},
 
 {
   "tags": [
@@ -803,7 +803,7 @@
   "title": "Fragments are automatically recreated upon Activity re-create",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/eb33b5e2040c2ca1d85083937a8c4907a6c91045#commitcomment-10039446"}
-}
+},
 
 {
   "tags": [
@@ -822,7 +822,7 @@
   "title": "Adapter view data is always there, clear it if not already overriding it",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/d1831095cdbea9d20a9c38a9a2717bd5ce82b69e#commitcomment-10039589"}
-}
+},
 
 {
   "tags": [
@@ -841,7 +841,7 @@
   "title": "You can use '@null' in attributes values",
   "type": "link",
   "payload": {"href": "https://github.com/tipz/tipz-android/commit/d1831095cdbea9d20a9c38a9a2717bd5ce82b69e#commitcomment-10039630"}
-}
+},
 
 {
   "tags": [
