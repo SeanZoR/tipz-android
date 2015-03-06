@@ -20,6 +20,7 @@ import java.util.Date;
 import java.util.List;
 
 import retrofit.RestAdapter;
+import retrofit.RetrofitError;
 import retrofit.converter.GsonConverter;
 
 /**
@@ -79,8 +80,32 @@ public class TipzService extends WakefulIntentService {
     protected void doWakefulWork(Intent intent) {
         if (intent != null) {
             final String action = intent.getAction();
-            if (ACTION_GET_TIPS.equals(action)) {
-                handleGetTips();
+
+            try {
+                if (ACTION_GET_TIPS.equals(action)) {
+                    handleGetTips();
+                }
+            }
+            catch (RetrofitError e){
+                // TODO: Broadcast failures with their kind
+                e.printStackTrace();
+                switch (e.getKind()){
+                    case NETWORK:
+                        Log.e(TAG, "TipzApi encountered a NETWORK error");
+                        break;
+                    case CONVERSION:
+                        Log.e(TAG, "TipzApi encountered a CONVERSION error");
+                        break;
+                    case HTTP:
+                        Log.e(TAG, "TipzApi encountered an HTTP error");
+                        break;
+                    case UNEXPECTED:
+                        Log.e(TAG, "TipzApi encountered an UNEXPECTED error");
+                        break;
+                }
+            }
+            catch (Exception e){
+                e.printStackTrace();
             }
         }
 
