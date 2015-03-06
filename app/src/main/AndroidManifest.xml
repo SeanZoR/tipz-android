@@ -9,6 +9,7 @@
         android:name=".TipzApplication"
         android:label="@string/app_name"
         android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
         android:theme="@style/Theme.Tipz">
         <activity
             android:name=".view.LauncherActivity"
