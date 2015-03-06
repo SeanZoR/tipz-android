@@ -11,3 +11,7 @@
     public static int d(...);
     public static int e(...);
 }
+
+# Keeping the classes that extends BaseRecyclerViewHolder because they have a lot of reflection
+# work on them
+-keep class * extends com.tipz.helpers.view.adapter.BaseRecyclerViewHolder { *; }
