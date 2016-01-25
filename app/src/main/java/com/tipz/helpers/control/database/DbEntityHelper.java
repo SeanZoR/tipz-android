@@ -51,7 +51,7 @@ public abstract class DbEntityHelper extends SQLiteOpenHelper {
 
             // Run on the fields
             for (Field currField : currContract.getClass().getFields()) {
-                if (currField.getDeclaredAnnotations().length > 0) {
+                if (currField.getDeclaredAnnotations().length > 0 && currField.isAnnotationPresent(DbBinder.class)) {
 
                     DbBinder annotation = currField.getAnnotation(DbBinder.class);
 
