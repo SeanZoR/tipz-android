@@ -3,8 +3,6 @@ Tipz.io - Learn Android Best Practices By Example
 
 This project is a sample project that demonstrates how to build an Android app.
 
-#http://tipz.github.io/tipz-android/
-
 ##Subjects that will be covered##
 We'll aim to cover a bunch of development process steps and best practices. Providing a "cook book" for successful, agile, clean process. Area we'll talk about: `REST`, `Android studio`, `Gradle`, `Maven`, `ProGuard`, `Intellij Inspections`, `Lint`, `Build variants`, `Flavours`, `Strict mode`, `MAT`, `Google play beta and rollouts`, `Graphical design`, `Performance`, `Automation`, `Unit testing`, `Git workflow`, `Jenkins`... And much more!
 
