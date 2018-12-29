@@ -11,15 +11,10 @@ Learning is best done through actual examples. So, This project leverages Github
   - `commit` - the basic comment will describe the general step, while further info will be commented in the Github as markdown comments
   - `pull request` - will capsulate multiple commits that describe a full feature in cases we will want to demonstrate "the big picture"
 
-## What is 'Tipz'? ##
-For the learning purposes, we will be using **Tipz.io** API in order to create a real RESTfull application.
-
-
-
 License
 =======
 
-    Copyright 2014 Sean Katz
+    Copyright 2019 Sean Katz
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
