@@ -3,11 +3,11 @@ Tipz.io - Learn Android Best Practices By Example
 
 This project is a sample project that demonstrates how to build an Android app.
 
-##Subjects that will be covered##
-We'll aim to cover a bunch of development process steps and best practices. Providing a "cook book" for successful, agile, clean process. Area we'll talk about: `REST`, `Android studio`, `Gradle`, `Maven`, `ProGuard`, `Intellij Inspections`, `Lint`, `Build variants`, `Flavours`, `Strict mode`, `MAT`, `Google play beta and rollouts`, `Graphical design`, `Performance`, `Automation`, `Unit testing`, `Git workflow`, `Jenkins`... And much more!
+## Covered subjects ##
+Covering a bunch of development process steps and best practices. Providing a "cook book" for successful, agile, clean process. Area we'll talk about: `REST`, `Android studio`, `Gradle`, `Maven`, `ProGuard`, `Intellij Inspections`, `Lint`, `Build variants`, `Flavours`, `Strict mode`, `MAT`, `Google play beta and rollouts`, `Graphical design`, `Performance`, `Automation`, `Unit testing`, `Git workflow`, `Jenkins`... And much more!
 
-##How to learn##
-We believe learning is best done through actual examples. So, This project leverages Github tools and showcase the needed info on the project "as we go":
+## How to learn ##
+Learning is best done through actual examples. So, This project leverages Github tools and showcase the needed info on the project "as we go":
   - `commit` - the basic comment will describe the general step, while further info will be commented in the Github as markdown comments
   - `pull request` - will capsulate multiple commits that describe a full feature in cases we will want to demonstrate "the big picture"
 
